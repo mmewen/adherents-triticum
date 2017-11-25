@@ -47,6 +47,40 @@ header {
 	margin-bottom: 1.5em;
 }
 
+@keyframes shake {
+    65%  {
+    	-webkit-transform: translateY(0em); 
+    	transform: translateY(0em);
+   	}
+    69%  {
+    	-webkit-transform: translateY(-0.5em); 
+    	transform: translateY(-0.5em);
+   	}
+    71%  {
+    	-webkit-transform: translateY(0.5em); 
+    	transform: translateY(0.5em);
+   	}
+    75%  {
+    	-webkit-transform: translateY(0em); 
+    	transform: translateY(0em);
+   	}
+}
+
+header .scroll-down {
+	text-align: center;
+	color: #fece35;
+	position: relative;
+	bottom: 1.8em;
+	font-size: 150%;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+header .scroll-down i {
+    animation-name: shake;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
 h1 {
 	font-size: 200%;
 	color: #fece35;
@@ -106,7 +140,7 @@ header p {
 	margin: 2%;
 	background-color: #3c3c3c;
 	border-radius: 0.5em;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	padding: 1em;
 	color: white;
@@ -114,7 +148,7 @@ header p {
 }
 
 .item:hover {
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .item a {
@@ -124,6 +158,16 @@ header p {
 .item i.big {
 	font-size: 300%;
 	color: #fece35;
+}
+
+.full-width {
+	width: 100%;
+	margin: 2em 0;
+}
+
+.yellow {
+	color: #fece35;
+	font-weight: normal;
 }
 
 footer {
