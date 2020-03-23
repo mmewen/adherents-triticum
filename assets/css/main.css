@@ -20,7 +20,7 @@ header {
     background: #472000 url("../images/background.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     position: absolute;
     z-index: 10;
 	top: 0;
@@ -30,12 +30,12 @@ header {
 }
 
 .header {
-	margin: auto;
 	border-radius: 0.5em;
 	padding: 2em;
 	background-color: rgba(0, 0, 0, 0.7);
 	width: 30%;
-	text-align: center;
+	margin-left: 3em;
+	margin-right: 3em;
 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
 	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -67,11 +67,12 @@ header {
 }
 
 header .scroll-down {
-	text-align: center;
-	color: #fece35;
-	position: relative;
-	bottom: 1.8em;
-	font-size: 150%;
+	/*text-align: center;*/
+	color: #fff;
+	/*position: relative;*/
+	/*bottom: 0em;*/
+	margin-left: 3em;
+	font-size: 200%;
 	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,7 +84,7 @@ header .scroll-down i {
 
 h1 {
 	font-size: 200%;
-	color: #fece35;
+	color: #fff;
 	font-weight: bolder;
 	margin-bottom: 0.5em;
 }
@@ -175,7 +176,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);*/
 	background: white;
 	/*width: 100%;*/
 	text-align: center;
@@ -190,7 +191,7 @@ footer.scroll {
 	display: block;
 }
 
-@keyframes boom {
+/*@keyframes boom {
     0%   {color: inherit;}
     25%  {color: inherit;}
     50%  {color: #fece35;}
@@ -201,7 +202,7 @@ footer.scroll {
     animation-name: boom;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-}
+}*/
 
 a {
 	text-decoration: none;
