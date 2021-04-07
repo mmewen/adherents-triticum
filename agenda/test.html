@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda des temps forts Triticum</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	
+
+<div id="app">
+	<ul>
+		<li v-for="event in events"> {{event.name}}, {{event.date}} </li>
+	</ul>
+	
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <script>
+	var app = new Vue({
+    	el: '#app',
+  		data: {
+			events:[]
+		}
+	})
+
+	fetch('https://adherents.triticum.fr/.netlify/functions/calendar')
+		.then(function(response) {
+			return response.json();
+		})
+		.then(function(myJson) {
+			app.events = myJason;
+		});
+
+  </script>
+</body>
+</html>
